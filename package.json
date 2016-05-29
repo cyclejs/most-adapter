@@ -15,7 +15,7 @@
     "test": "npm run lib && npm run lint && npm run unit-test",
     "dist": "rimraf dist/ && mkdirp dist && npm run lib && browserify lib/index.js -t babelify -t browserify-shim --standalone cycleMosAdapter --exclude most,most-subject --outfile dist/cycle-most-adapter.js && uglifyjs dist/most-subject.js -o dist/cycle-most-adapter.min.js",
     "postdist": "git add dist/ && git commit -m 'chore(dist): build dist/'",
-    "lib": "rimraf lib/ && mkdirp lib/ && tsc",
+    "lib": "rimraf lib/ && mkdirp lib/ && typings install && tsc",
     "prepublish": "npm run lib",
     "prerelease": "npm run doc && npm run dist",
     "release-patch": "npm run prerelease && npm version patch -m \"chore(release): release new version\" && npm run changelog",

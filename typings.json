@@ -1,6 +1,6 @@
 {
   "name": "most-subject",
-  "ambientDependencies": {
+  "dependencies": {
     "@cycle/base": "npm:@cycle/base"
   }
 }
