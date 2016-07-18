@@ -1,3 +1,3 @@
-# Cycle.js Most Adapter
+# Moved
 
-Stream adapter interface for most.js
+Moved to https://github.com/cyclejs/cyclejs/tree/master/most-adapter
